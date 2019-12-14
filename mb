@@ -8,6 +8,8 @@ parser.add_argument('file_name',metavar='file',help='filename or absolute filena
 arguments = parser.parse_args()
 argument1_file=arguments.file_name
 
+# checking file is a backup file or source
+
 if ".ba_ck" in argument1_file:
      if "/" in argument1_file:
          if os.path.exists(argument1_file) and os.path.isfile(argument1_file):
